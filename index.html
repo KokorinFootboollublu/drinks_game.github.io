@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="grayback">
+        <div class="whiteborder1"></div>
+        <div class="prompt">
+            <div class="exit">
+                <button class="btn_ex"><img src="img/Exitbtn.png" alt="Exitbtn"></button>
+            </div>
+            <h1 class="RecepiesHeader">Рецепты</h1>
+            <div class="recepies">
+                <div class="recepy">
+                    <p class="name">Кофе</p>
+                    <div class="images">
+                        <img src="img/Coffee.png" alt="">
+                        <img src="img/Coffee.png" alt="">
+                        <img src="img/Milk.png" alt="">
+                    </div>
+                </div>
+                <div class="recepy">
+                    <p class="name">Сок</p>
+                    <div class="images">
+                        <img src="img/Juce.png" alt="">
+                        <img src="img/Juce.png" alt="">
+                        <img src="img/Juce.png" alt="">
+                    </div>
+                </div>
+                <div class="recepy">
+                    <p class="name">Кофе с карамелью</p>
+                    <div class="images">
+                        <img src="img/Coffee.png" alt="">
+                        <img src="img/Milk.png" alt="">
+                        <img src="img/Caramel.png" alt="">
+                    </div>
+                </div>
+                <div class="recepy">
+                    <p class="name">Чай с мятой</p>
+                    <div class="images">
+                        <img src="img/Tea.png" alt="">
+                        <img src="img/Tea.png" alt="">
+                        <img src="img/Mint.png" alt="">
+                    </div>
+                </div>
+                <div class="recepy">
+                    <p class="name">Какао с молоком</p>
+                    <div class="images">
+                        <img src="img/Cacao.png" alt="">
+                        <img src="img/Cacao.png" alt="">
+                        <img src="img/Milk.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="background">
+            <div class="leftside" >
+                <div class="button">
+                    <button class="question_btn"><img  class="question_btn" src="img/QuestionIcon.svg" alt="QuestionIcon"></button>
+                    <p class="button_prompt">Рецепты</p>
+                </div>
+                <div class="order_corner">
+                    <div hidden class="order_1" id="order">СДЕЛАЙТЕ МНЕ ЧАЙ С МЯТОЙ</div>
+                    <div hidden class="order_2" id="order">СДЕЛАЙТЕ МНЕ КОФЕ</div>
+                    <div hidden class="order_3" id="order">МНЕ ПОЖАЛУЙСТА СОК</div>
+                    <div hidden class="order_4" id="order">МНЕ ПОЖАЛУЙСТА КОФЕ С КАРАМЕЛЬЮ</div>
+                    <div hidden class="order_5" id="order">СДЕЛАЙТЕ МНЕ ПОЖАЛУЙСТА КАКАО С МОЛОКОМ</div>
+                    <div hidden class="confirm" id="order">СПАСИБО!</div>
+                    <div hidden class="refuse" id="order">ЭТО НЕ ТО ЧТО Я ПРОСИЛА</div>
+                    <img class="img" src="img/Woman.png" alt="visitor">
+                </div>
+            </div>
+            <div class="center">
+                <div class="coupon">
+                    <div class="coupon_txt" style="display: none;">
+                        <p>поздравляем, вы получили купон</p>
+                        <p>на один напиток</p>
+                        <p>не дороже 300 рублей!</p>
+                    </div>
+                    <div class="coupon_txt_2" style="display: none;">
+                        <p>Вы приготовили</p>
+                        <p>неверный напиток!</p>
+                    </div>
+                    <img hidden class="coupon_img" src="img/coupon.png" alt="">
+                    <img hidden class="Left" src="img/LeftFireworks.png" alt="">
+                    <img hidden class="Right" src="img/RightFireworks.png" alt="">
+                </div>
+                <div class="littleIngImgs">
+                    <img id="img_1" src="img/Coffee.png" alt="" style="display: none; margin-left: 15px;">
+                    <img id="img_2" src="img/Tea.png" alt="" style="display: none; margin-left: 15px;">
+                    <img id="img_3" src="img/Juce.png" alt="" style="display: none; margin-left: 15px;">
+                    <img id="img_4" src="img/Milk.png" alt="" style="display: none; margin-left: 15px;">
+                    <img id="img_5" src="img/Cacao.png" alt="" style="display: none; margin-left: 15px;">
+                    <img id="img_6" src="img/Caramel.png" alt="" style="display: none; margin-left: 15px;">
+                    <img id="img_7" src="img/Soda.png" alt="" style="display: none; margin-left: 15px;">
+                    <img id="img_8" src="img/Lemon.png" alt="" style="display: none; margin-left: 15px;">
+                    <img id="img_9" src="img/Mint.png" alt="" style="display: none; margin-left: 15px;">
+                </div>
+                <img class="arrow" src="img/Arrow 1.svg" alt="" style="display: none;">
+                <div class="glass">
+                    <img hidden class="wrong_img" src="img/wrong.svg" alt="">
+                    <img class="glass_img" src="img/MainGlass.svg" alt="glass">
+                </div>
+            </div>
+            <div class="rightside">
+                <div class="Ingredients">
+                    <div class="row">
+                        <div class="ingredient">
+                            <div class="img_1">
+                                <button value="1" id="Ing_btn"><p>КОФЕ</p></button>
+                            </div>
+                        </div>
+                        <div class="ingredient">
+                            <div class="img_2">
+                                <button value="2" id="Ing_btn">ЧАЙ</button>
+                            </div>
+                        </div>
+                        <div class="ingredient">
+                            <div class="img_3">
+                                <button value="3" id="Ing_btn">СОК</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="ingredient">
+                            <div class="img_4">
+                                <button value="4" id="Ing_btn">МОЛОКО</button>
+                            </div>
+                        </div>
+                        <div class="ingredient">
+                            <div class="img_5">
+                                <button value="5" id="Ing_btn">КАКАО</button>
+                            </div>
+                        </div>
+                        <div class="ingredient">
+                            <div class="img_6">
+                                <button value="6" id="Ing_btn">КАРАМЕЛЬ</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="ingredient">
+                            <div class="img_7">
+                                <button value="7" id="Ing_btn">ГАЗИРОВКА</button>
+                            </div>
+                        </div>
+                        <div class="ingredient">
+                            <div class="img_8">
+                                <button value="8" id="Ing_btn">ЛИМОН</button>
+                            </div>
+                        </div>
+                        <div class="ingredient">
+                            <div class="img_9">
+                                <button value="9" id="Ing_btn">МЯТА</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="anothergray"></div>
+        </div>
+        <div class="whiteborder2"></div>
+    </div>
+</body>
+</html>
